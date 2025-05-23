@@ -1,0 +1,15 @@
+.btn-primary {
+  background: linear-gradient(180deg, #a864f7 0%, #7244c7 100%);
+  transition: 0.3s;
+}
+.btn-primary:hover {
+  background: linear-gradient(180deg, #a785cf 0%, #682dd5 100%);
+}
+
+.btn-secondary {
+  background: linear-gradient(180deg, #f76464 0%, #c74444 100%);
+  transition: 0.3s;
+}
+.btn-secondary:hover {
+  background: linear-gradient(180deg, #ab5858 0%, #e14747 100%);
+}

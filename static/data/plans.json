@@ -1,0 +1,146 @@
+{
+  "monthly": [
+    {
+      "id": "standard-monthly",
+      "name": "Standard",
+      "description": "Perfect for getting started",
+      "price": 99,
+      "billingCycle": "/ month",
+      "billingCycleColor": "color: rgb(103,232,249)",
+      "billingType": "Billed Monthly.",
+      "features": [
+        "1,000 Mail Checks per month",
+        "100 Invoice Extractions per month",
+        "1 Email Integration",
+        "100 Natural Language Queries",
+        "1 Team Member",
+        "Basic Support"
+      ],
+      "class": "border-2 p-6 rounded-xl",
+      "css": "background: #f2c4a336; border-color: #f2c4a3;",
+      "titleCss": "color: #2C75CC",
+      "buttonText": "Subscribe Now",
+      "buttonCss": "background: #2C75CC",
+      "link": "https://buy.stripe.com/aEU3ej9349AGfks9AD"
+    },
+    {
+      "id": "premium-monthly",
+      "name": "Premium",
+      "description": "Best value for money",
+      "price": 249,
+      "billingCycle": "/month",
+      "billingCycleColor": "color: rgb(251,146,60)",
+      "billingType": "Billed Monthly.",
+      "features": [
+        "3,000 Mail Checks per month",
+        "300 Invoice Extractions per month",
+        "10 Email Integrations",
+        "300 Natural Language Queries",
+        "10 Team Members",
+        "Priority Support"
+      ],
+      "class": "border-2 p-6 rounded-xl",
+      "css": "background: #dcbefa42; border-color: #DCBEFA;",
+      "titleCss": "color: #FB57D7",
+      "buttonText": "Subscribe Now",
+      "buttonCss": "background: #FB57D7",
+      "link": "https://buy.stripe.com/fZeeX1bbc006c8g28c"
+    },
+    {
+      "id": "custom-plan",
+      "name": "Custom Plan",
+      "description": "Tailored to your needs",
+      "price": "custom",
+      "billingCycle": "/custom",
+      "billingCycleColor": "color: #A950F0",
+      "billingType": "Custom Billing.",
+      "features": [
+        "Custom Mail Checks limit",
+        "Custom Invoice Extractions",
+        "Custom Email Integrations",
+        "Custom Natural Language Query limit",
+        "Custom Team Members",
+        "24/7 Premium Support"
+      ],
+      "class": "bg-[#faaed345] border-2 border-[#faaed3] p-6 rounded-xl",
+      "css": "background: #faaed345; border-color: #faaed3;",
+      "titleCss": "color: #A950F0",
+      "buttonText": "Contact Us",
+      "buttonCss": "background: #A950F0",
+      "link": "mailto:invoiceAgent.ai@gmail.com"
+    }
+  ],
+  "yearly": [
+    {
+      "id": "standard-yearly",
+      "name": "Standard",
+      "description": "Perfect for getting started",
+      "price": 800,
+      "billingCycle": "/year",
+      "billingCycleColor": "color: rgb(103,232,249)",
+      "billingType": "$800 Billed Yearly",
+      "features": [
+        "1,000 Mail Checks per month",
+        "100 Invoice Extractions per month",
+        "1 Email Integration",
+        "100 Natural Language Queries",
+        "1 Team Member",
+        "Basic Support",
+        "Save $388 annually"
+      ],
+      "class": "border-2 p-6 rounded-xl",
+      "css": "background: #f2c4a336; border-color: #f2c4a3;",
+      "titleCss": "color: #2C75CC",
+      "buttonText": "Subscribe Now",
+      "buttonCss": "background: #2C75CC",
+      "link": "https://buy.stripe.com/fZe3ejfrsdQW1tC5kl"
+    },
+    {
+      "id": "premium-yearly",
+      "name": "Premium",
+      "description": "Best value for money",
+      "price": 2000,
+      "billingCycle": "/year",
+      "billingCycleColor": "color: rgb(251,146,60)",
+      "billingType": "$2000 Billed Yearly",
+      "features": [
+        "3,000 Mail Checks per month",
+        "300 Invoice Extractions per month",
+        "10 Email Integrations",
+        "300 Natural Language Queries",
+        "10 Team Members",
+        "Priority Support",
+        "Save $988 annually"
+      ],
+      "class": "border-2 p-6 rounded-xl",
+      "css": "background: #dcbefa42; border-color: #DCBEFA;",
+      "titleCss": "color: #FB57D7",
+      "buttonText": "Subscribe Now",
+      "buttonCss": "background: #FB57D7",
+      "link": "https://buy.stripe.com/14kbKPdjk5kqfks5kp"
+    },
+    {
+      "id": "custom-plan",
+      "name": "Custom Plan",
+      "description": "Tailored to your needs",
+      "price": "custom",
+      "billingCycle": "/custom",
+      "billingCycleColor": "color: #A950F0",
+      "billingType": "Custom Billing.",
+      "features": [
+        "Custom Mail Checks limit",
+        "Custom Invoice Extractions",
+        "Custom Email Integrations",
+        "Custom Natural Language Query limit",
+        "Custom Team Members",
+        "24/7 Premium Support"
+      ],
+      "class": "bg-[#faaed345] border-2 border-[#faaed3] p-6 rounded-xl",
+      "css": "background: #faaed345; border-color: #faaed3;",
+      "titleCss": "color: #A950F0",
+      "buttonText": "Contact Us",
+      "buttonCss": "background: #A950F0",
+      "link": "mailto:invoiceAgent.ai@gmail.com"
+    }
+  ]
+}
