@@ -15,13 +15,13 @@ import { useRoute } from "vue-router";
 
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDUem8hFDM6aNegp2u9DfNdG1HYzvVvGKc",
-  authDomain: "invoice-agent-ai.firebaseapp.com",
-  projectId: "invoice-agent-ai",
-  storageBucket: "invoice-agent-ai.firebasestorage.app",
-  messagingSenderId: "836251409401",
-  appId: "1:836251409401:web:748a99ff6f4bd2ee42fb28",
-  measurementId: "G-SNT6YNGW22",
+  apiKey: "AIzaSyAN538rB8oQW1FmT5eji9syvg-nsFoPchM",
+  authDomain: "auth-test-2070d.firebaseapp.com",
+  projectId: "auth-test-2070d",
+  storageBucket: "auth-test-2070d.firebasestorage.app",
+  messagingSenderId: "469847261926",
+  appId: "1:469847261926:web:b8458e6a52139668127127",
+  measurementId: "G-HRT677KV3W",
 };
 
 export default function () {
@@ -78,7 +78,7 @@ export default function () {
         () => {
           refreshAndSetIdToken();
         },
-        55 * 60 * 1000,
+        55 * 60 * 1000
       ); // Refresh token every 55 minutes
     } else {
       // User is signed out, clear the interval and reset the store
@@ -111,7 +111,7 @@ export default function () {
           logEvent(analytics, "page_view", { page_path: to.path });
         }
       },
-      { immediate: true },
+      { immediate: true }
     );
   });
 
