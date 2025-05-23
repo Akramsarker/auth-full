@@ -55,15 +55,6 @@ export default function () {
         const userDetails = await store.getUserDetails();
         console.log(userDetails, "userDetails");
         console.log(userDetails, "userDetails?.org_id");
-
-        if (userDetails?.org_id) {
-          const orgDetails = await store.getOrgDetails(userDetails.org_id);
-          console.log(orgDetails, "orgDetails");
-        } else if (!userDetails?.org_id) {
-          console.log("navigate to onboarding");
-          navigateTo("/onboarding");
-        }
-
         if (analytics) {
           setUserId(analytics, user.uid);
         }
