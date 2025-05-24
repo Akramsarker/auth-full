@@ -3,12 +3,12 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getStorage } from "firebase/storage";
 import { getFirestore } from "firebase/firestore";
 
-import {
-  getAnalytics,
-  logEvent,
-  setUserId,
-  isSupported,
-} from "firebase/analytics";
+// import {
+//   getAnalytics,
+//   logEvent,
+//   setUserId,
+//   isSupported,
+// } from "firebase/analytics";
 import { useMainStore } from "~/stores/index.js";
 import { onMounted, watch } from "vue";
 import { useRoute } from "vue-router";
@@ -37,13 +37,13 @@ export default function () {
   let tokenRefreshInterval;
 
   // Check if Firebase Analytics is supported
-  isSupported().then((supported) => {
-    if (supported) {
-      analytics = getAnalytics(app);
-    } else {
-      console.log("Firebase Analytics is not supported in this environment");
-    }
-  });
+  // isSupported().then((supported) => {
+  //   if (supported) {
+  //     analytics = getAnalytics(app);
+  //   } else {
+  //     console.log("Firebase Analytics is not supported in this environment");
+  //   }
+  // });
 
   const provider = () => new GoogleAuthProvider(app);
 
@@ -55,9 +55,9 @@ export default function () {
         const userDetails = await store.getUserDetails();
         console.log(userDetails, "userDetails");
         console.log(userDetails, "userDetails?.org_id");
-        if (analytics) {
-          setUserId(analytics, user.uid);
-        }
+        // if (analytics) {
+        //   setUserId(analytics, user.uid);
+        // }
       }
 
       // Set the ID token in Axios headers immediately
@@ -95,21 +95,21 @@ export default function () {
   onMounted(() => {
     const route = useRoute();
 
-    watch(
-      route,
-      (to) => {
-        if (analytics) {
-          logEvent(analytics, "page_view", { page_path: to.path });
-        }
-      },
-      { immediate: true }
-    );
+    // watch(
+    //   route,
+    //   (to) => {
+    //     if (analytics) {
+    //       logEvent(analytics, "page_view", { page_path: to.path });
+    //     }
+    //   },
+    //   { immediate: true }
+    // );
   });
 
   // Function to log events
-  function eventLog(event_name, payload) {
-    logEvent(analytics, event_name, payload);
-  }
+  // function eventLog(event_name, payload) {
+  //   logEvent(analytics, event_name, payload);
+  // }
 
-  return { auth, provider, storage, eventLog, db };
+  return { auth, provider, storage, db };
 }
